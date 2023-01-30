@@ -4,6 +4,18 @@
 
 sonarQube版本 7.7+
 
+# Build
+```bash
+# 修改版本： 项目版本-SonarQube版本-P3C版本
+mvn versions:set versions:commit
+
+# 打包
+mvn clean package -Dmaven.test.skip=true
+
+# 插件包
+ll sonar-pmd-plugin/target/sonar-pmd-plugin-p3c-3.2.1-v8.9.10-v2.1.1.jar
+```
+
 # SonarQube PMD Plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.sonarsource.pmd/sonar-pmd-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.sonarsource.pmd/sonar-pmd-plugin) [![Build Status](https://api.travis-ci.org/jensgerdes/sonar-pmd.svg?branch=master)](https://travis-ci.org/jensgerdes/sonar-pmd) [![SonarStatus](https://sonarcloud.io/api/project_badges/measure?project=org.sonarsource.pmd%3Asonar-pmd-plugin&metric=alert_status)](https://sonarcloud.io/dashboard?id=org.sonarsource.pmd%3Asonar-pmd-plugin) [![SonarStatus](https://sonarcloud.io/api/project_badges/measure?project=org.sonarsource.pmd%3Asonar-pmd-plugin&metric=coverage)](https://sonarcloud.io/dashboard?id=org.sonarsource.pmd%3Asonar-pmd-plugin)
 Sonar-PMD is a plugin that provides coding rules from [PMD](https://pmd.github.io/).
 

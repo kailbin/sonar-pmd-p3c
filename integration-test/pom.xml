@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.sonarsource.pmd</groupId>
     <artifactId>sonar-pmd</artifactId>
-    <version>3.2.1</version>
+    <version>3.2.1-v8.9.10-v2.1.1</version>
   </parent>
 
   <artifactId>integration-test</artifactId>

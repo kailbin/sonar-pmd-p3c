@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.sonarsource.pmd</groupId>
     <artifactId>sonar-pmd</artifactId>
-    <version>3.2.1</version>
+    <version>3.2.1-v8.9.10-v2.1.1</version>
   </parent>
 
   <artifactId>sonar-pmd-plugin</artifactId>
@@ -42,12 +43,14 @@
       <groupId>org.sonarsource.sonarqube</groupId>
       <artifactId>sonar-plugin-api</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.codehaus.staxmate</groupId>
       <artifactId>staxmate</artifactId>
       <version>2.0.1</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>org.sonarsource.java</groupId>
       <artifactId>java-frontend</artifactId>
@@ -60,6 +63,7 @@
         </exclusion>
       </exclusions>
     </dependency>
+
     <dependency>
       <groupId>org.sonarsource.sslr-squid-bridge</groupId>
       <artifactId>sslr-squid-bridge</artifactId>
@@ -83,10 +87,12 @@
         </exclusion>
       </exclusions>
     </dependency>
+
     <dependency>
       <groupId>net.sourceforge.pmd</groupId>
       <artifactId>pmd-java</artifactId>
     </dependency>
+
     <dependency>
       <groupId>jdom</groupId>
       <artifactId>jdom</artifactId>
@@ -96,8 +102,9 @@
     <dependency>
       <groupId>com.alibaba.p3c</groupId>
       <artifactId>p3c-pmd</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1</version>
     </dependency>
+
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
@@ -107,6 +114,9 @@
   </dependencies>
 
   <build>
+
+    <finalName>${artifactId}-p3c-${version}</finalName>
+
     <plugins>
       <plugin>
         <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
